@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+$primary: #d52114;
+$lightgray: #d3d3d3;
+$text: #585858;
+$white: #fff;
+$black: #000000;
+$orange: #fd830f;
+$bg: #f7f7f7;
+
+$fontSize: 16px;
+$fontFamily: 'Montserrat', sans-serif;
+
+$transition: all 0.3s ease;
+
+$padding: 64px 0;
+
+/* basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  color: $black;
+  background: $bg;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* nav */
+header {
+  border-top: 5px solid $primary;
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      margin-right: 5px auto;
+      button {
+        // display: flex;
+        // justify-content: left;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        background: $primary;
+        color: $white;
+        padding: 15px 15px 10px 15px;
+        font-size: $fontSize;
+        font-weight: 600;
+      }
+    }
+    ul {
+      li {
+        display: inline-block;
+        padding: 10px;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 16px;
+          color: $white;
+          padding: 10px;
+          &:hover {
+            background: $primary;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+/* main */
+main {
+  p:first-child {
+    padding: 30px 0;
+    text-align: center;
+  }
+  hr {
+    border: none;
+    height: 3px;
+    background-color: $primary;
+    width: 50%;
+    margin: 0 auto 50px;
+  }
+  .main {
+    text-align: center;
+    p {
+      color: #585858;
+      font-size: 12px;
+    }
+  }
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    .images {
+      img {
+        width: 250px;
+        padding: 0 10px;
+        margin: 30px 0;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+/* footer */
+footer {
+  background-color: $primary;
+  height: 15vh;
+  text-align: center;
+  padding: 40px;
+  p {
+    color: $bg;
+    font-size: 16px;
+  }
+}
